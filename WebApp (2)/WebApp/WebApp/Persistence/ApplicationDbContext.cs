@@ -11,6 +11,11 @@ namespace WebApp.Persistence
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Line> Lines { get; set; }
+        public DbSet<Station> Stations { get; set; }
+        public DbSet<PassengerType> PassengerTypes { get; set; }
+        public DbSet<PayPal> PayPals { get; set; }
+        public DbSet<Pricelist> Pricelists { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

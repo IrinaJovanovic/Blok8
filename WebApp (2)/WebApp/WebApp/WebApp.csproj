@@ -290,6 +290,10 @@
     <Compile Include="Persistence\Repository\ITicketTypeRepository.cs" />
     <Compile Include="Persistence\Repository\ITimetableRepository.cs" />
     <Compile Include="Persistence\Repository\IVehicleRepository.cs" />
+    <Compile Include="Persistence\Repository\LineRepository.cs" />
+    <Compile Include="Persistence\Repository\PassengerTypeRepository.cs" />
+    <Compile Include="Persistence\Repository\PayPalRepository.cs" />
+    <Compile Include="Persistence\Repository\PricelistRepository.cs" />
     <Compile Include="Persistence\Repository\Repository.cs" />
     <Compile Include="Persistence\UnitOfWork\DemoUnitOfWork.cs" />
     <Compile Include="Persistence\UnitOfWork\IUnitOfWork.cs" />
@@ -360,6 +364,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\HelpModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
