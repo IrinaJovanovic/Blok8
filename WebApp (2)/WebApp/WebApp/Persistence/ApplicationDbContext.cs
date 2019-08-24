@@ -16,6 +16,13 @@ namespace WebApp.Persistence
         public DbSet<PassengerType> PassengerTypes { get; set; }
         public DbSet<PayPal> PayPals { get; set; }
         public DbSet<Pricelist> Pricelists { get; set; }
+        public DbSet<Ticket> Tickets { get; set; }
+        public DbSet<TicketPrices> TicketPrices { get; set; }
+        public DbSet<TicketType> TicketTypes { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
+        public DbSet<SerialNumberSL> SerialNumberSLs { get; set; }
+        public DbSet<Timetable> Timetables { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
