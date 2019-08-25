@@ -1,0 +1,37 @@
+hr
+{
+    border-top:2px solid rgb(201, 195, 195);
+}
+.card-deck{
+    margin-top: 50px;
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.collapse.navbar-collapse {
+    right: 0%;
+    position: absolute;
+}
+
+#label
+{
+    font-size: 36px;
+}
+
+#btn
+{
+    background-color: #4CAF50; /* Green */
+}
+
+#btn
+{
+    background-color: #4CAF50; /* Green */
+}
+
+
+
+
