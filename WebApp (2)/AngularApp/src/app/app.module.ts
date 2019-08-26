@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { TicketPricesComponent } from './ticket-prices/ticket-prices.component';
+import { BusNetworksLinesComponent } from './bus-networks-lines/bus-networks-lines.component';
 
 
 
@@ -12,7 +14,9 @@ import { ScheduleComponent } from './schedule/schedule.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    ScheduleComponent
+    ScheduleComponent,
+    TicketPricesComponent,
+    BusNetworksLinesComponent
   ],
   imports: [
     BrowserModule,
