@@ -9,8 +9,6 @@ namespace WebApp.Persistence.Repository
 {
     public interface ILineRepository : IRepository<Line,int>
     {
-        IEnumerable<Line> GetAllLiWithSstations();
-        string ReplaceStations(int lineId, IEnumerable<Station> stations);
-        void Delete(int id);
+        Line Get(int v);
     }
 }

@@ -7,6 +7,7 @@ namespace WebApp.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
     using WebApp.Models;
+    using static WebApp.Models.Enums;
 
     internal sealed class Configuration : DbMigrationsConfiguration<WebApp.Persistence.ApplicationDbContext>
     {

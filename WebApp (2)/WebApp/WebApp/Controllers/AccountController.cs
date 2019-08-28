@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -14,6 +16,8 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using WebApp.Models;
+using WebApp.Models.HelpModels;
+using WebApp.Persistence.UnitOfWork;
 using WebApp.Providers;
 using WebApp.Results;
 
@@ -25,6 +29,9 @@ namespace WebApp.Controllers
     {
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
+        private IUnitOfWork _unitOfWork;
+        private DbContext _context;
+
 
         public AccountController()
         {
@@ -35,6 +42,12 @@ namespace WebApp.Controllers
         {
             UserManager = userManager;
             AccessTokenFormat = accessTokenFormat;
+        }
+
+        public AccountController(IUnitOfWork unitOfWork, DbContext context)
+        {
+            _unitOfWork = unitOfWork;
+            _context = context;
         }
 
         public ApplicationUserManager UserManager
@@ -58,11 +71,21 @@ namespace WebApp.Controllers
         {
             ExternalLoginData externalLogin = ExternalLoginData.FromIdentity(User.Identity as ClaimsIdentity);
 
+             var userId = User.Identity.GetUserId();
+             User usr = _unitOfWork.Users.GetAll().Where(u => u.AppUserId == userId).FirstOrDefault();
+
+            string date = usr.DateOfBirth.ToUniversalTime().Date.ToString().Split(' ')[0];
+
+            var pic = _unitOfWork.Pictures.GetAll().Where((u) => u.AppUserId == userId).FirstOrDefault();
+            string imgSource = "";
+            if (pic != null)
+                imgSource = System.Convert.ToBase64String(pic.ImageSource);
             return new UserInfoViewModel
             {
                 Email = User.Identity.GetUserName(),
                 HasRegistered = externalLogin == null,
                 LoginProvider = externalLogin != null ? externalLogin.LoginProvider : null
+
             };
         }
 

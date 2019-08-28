@@ -9,7 +9,7 @@ namespace WebApp.Persistence.UnitOfWork
 {
     public interface IUnitOfWork : IDisposable
     {
-        // int Complete();
+         int Complete();
         IDayTypeRepository DayTypes { get; set; }
         ILineRepository Lines { get; set; }
         IPassengerTypeRepository PassengerTypes { get; set; }
@@ -22,7 +22,9 @@ namespace WebApp.Persistence.UnitOfWork
         IVehicleRepository Vehicles { get; set; }
         ISerialNumberSLRepository SerialNumberSLs { get; set; }
         IPayPalRepository PayPals { get; set; }
+        IUserRepository Users { get; set; }
+        IPictureRepository Pictures { get; set; }
 
-        int Complete();
+       // int Complete();
     }
 }

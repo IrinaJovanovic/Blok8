@@ -43,6 +43,11 @@ namespace WebApp.Persistence.UnitOfWork
         [Dependency]
         public IPayPalRepository PayPals { get; set; }
 
+        [Dependency]
+        public IPictureRepository Pictures { get; set; }
+
+        [Dependency]
+        public IUserRepository Users { get; set; }
 
 
 

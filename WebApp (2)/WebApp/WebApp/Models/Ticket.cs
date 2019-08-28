@@ -6,27 +6,21 @@ using System.Web;
 
 namespace WebApp.Models
 {
+
     public class Ticket
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public double Price { get; set; }
+        public TicketType Type { get; set; }
+        public TimeSpan RemainingTime { get; set; }
+        public bool Checked { get; set; }
 
-        public DateTime? PurchaseTime { get; set; }
+        public string CheckedTime { get; set; }
 
-        
-        public int? TicketTypeId { get; set; }
-        public TicketType TicketType { get; set; }
+        [ForeignKey("User")]
+        public string UserId { get; set; }
+        public ApplicationUser User { get; set; }
 
-        [ForeignKey("TicketPrices")]
-        public int TicketPricesId { get; set; }
-        public TicketPrices TicketPrices { get; set; }
-
-        [ForeignKey("PayPal")]
-        public int PayPalId { get; set; }
-        public PayPal PayPal { get; set; }
-
-        [ForeignKey("ApplicationUser")]
-        public string ApplicationUserId { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
     }
+
 }
