@@ -5,6 +5,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { TicketPricesComponent } from './ticket-prices/ticket-prices.component';
 import { BusNetworksLinesComponent } from './bus-networks-lines/bus-networks-lines.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginGuard } from './auth/login.guard';
+import { LoginComponent } from './auth/login/login.component';
 
 const routes: Routes = [ {
     path: "",
@@ -25,7 +27,13 @@ const routes: Routes = [ {
   {
     path: "register",
     component: RegisterComponent
-  },];
+  },
+  { 
+    path: 'login', 
+    component: LoginComponent, 
+    canActivate: [LoginGuard]
+  },
+];
 
 
 @NgModule({

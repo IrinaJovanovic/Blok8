@@ -9,7 +9,7 @@ import { TicketPricesComponent } from './ticket-prices/ticket-prices.component';
 import { BusNetworksLinesComponent } from './bus-networks-lines/bus-networks-lines.component';
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     ScheduleComponent,
     TicketPricesComponent,
     BusNetworksLinesComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
