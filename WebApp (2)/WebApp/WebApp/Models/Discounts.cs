@@ -7,11 +7,11 @@ using static WebApp.Models.Enums;
 
 namespace WebApp.Models
 {
-    public class Pricelist
+    public class Discounts
     {
         public int Id { get; set; }
-        public TicketType ticketType { get; set; }
-        public double price { get; set; }
+        public UserType Type { get; set; }
+        public double Discount { get; set; }
 
         [Timestamp]
         public byte[] RowVersion { get; set; }

@@ -259,56 +259,59 @@
     <Compile Include="Migrations\201905222056072_InitialMigration.Designer.cs">
       <DependentUpon>201905222056072_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908301619081_sve.cs" />
+    <Compile Include="Migrations\201908301619081_sve.Designer.cs">
+      <DependentUpon>201908301619081_sve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908301751145_Ispravka.cs" />
+    <Compile Include="Migrations\201908301751145_Ispravka.Designer.cs">
+      <DependentUpon>201908301751145_Ispravka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908301846115_izmena2.cs" />
+    <Compile Include="Migrations\201908301846115_izmena2.Designer.cs">
+      <DependentUpon>201908301846115_izmena2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\DayType.cs" />
+    <Compile Include="Models\Depature.cs" />
+    <Compile Include="Models\Discounts.cs" />
     <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\HelpModels\Schedule.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Picture.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Line.cs" />
-    <Compile Include="Models\PassengerType.cs" />
     <Compile Include="Models\PayPal.cs" />
     <Compile Include="Models\Pricelist.cs" />
-    <Compile Include="Models\SerialNumberSL.cs" />
     <Compile Include="Models\Station.cs" />
     <Compile Include="Models\Ticket.cs" />
-    <Compile Include="Models\TicketPrices.cs" />
-    <Compile Include="Models\TicketType.cs" />
-    <Compile Include="Models\Timetable.cs" />
-    <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Persistence\ApplicationDbContext.cs" />
-    <Compile Include="Persistence\Repository\DayTypeRepository.cs" />
-    <Compile Include="Persistence\Repository\IDayTypeRepository.cs" />
+    <Compile Include="Persistence\Repository\DepatureRepository.cs" />
+    <Compile Include="Persistence\Repository\DiscountRepository.cs" />
+    <Compile Include="Persistence\Repository\IDepatureRepository.cs" />
+    <Compile Include="Persistence\Repository\IDiscountRepository .cs" />
     <Compile Include="Persistence\Repository\ILineRepository.cs" />
-    <Compile Include="Persistence\Repository\IPassengerTypeRepository.cs" />
+    <Compile Include="Persistence\Repository\ILocationRepository.cs" />
     <Compile Include="Persistence\Repository\IPayPalRepository.cs" />
     <Compile Include="Persistence\Repository\IPictureRepository.cs" />
     <Compile Include="Persistence\Repository\IPricelistRepository.cs" />
     <Compile Include="Persistence\Repository\IRepository.cs" />
-    <Compile Include="Persistence\Repository\ISerialNumberSLRepository.cs" />
+    <Compile Include="Persistence\Repository\IScheduleRepository.cs" />
     <Compile Include="Persistence\Repository\IStationRepository.cs" />
-    <Compile Include="Persistence\Repository\ITicketPricesRepository.cs" />
     <Compile Include="Persistence\Repository\ITicketRepository.cs" />
-    <Compile Include="Persistence\Repository\ITicketTypeRepository.cs" />
-    <Compile Include="Persistence\Repository\ITimetableRepository.cs" />
     <Compile Include="Persistence\Repository\IUserRepository.cs" />
-    <Compile Include="Persistence\Repository\IVehicleRepository.cs" />
     <Compile Include="Persistence\Repository\LineRepository.cs" />
-    <Compile Include="Persistence\Repository\PassengerTypeRepository.cs" />
+    <Compile Include="Persistence\Repository\LocationRepository.cs" />
     <Compile Include="Persistence\Repository\PayPalRepository.cs" />
     <Compile Include="Persistence\Repository\PictureRepository.cs" />
     <Compile Include="Persistence\Repository\PricelistRepository.cs" />
     <Compile Include="Persistence\Repository\Repository.cs" />
-    <Compile Include="Persistence\Repository\SerialNumberSLRepository.cs" />
+    <Compile Include="Persistence\Repository\ScheduleRepository.cs" />
     <Compile Include="Persistence\Repository\StationRepository.cs" />
-    <Compile Include="Persistence\Repository\TicketPricesRepository.cs" />
     <Compile Include="Persistence\Repository\TicketRepository.cs" />
-    <Compile Include="Persistence\Repository\TicketTypeRepository.cs" />
-    <Compile Include="Persistence\Repository\TimetableRepository.cs" />
-    <Compile Include="Persistence\Repository\VehicleRepository.cs" />
+    <Compile Include="Persistence\Repository\UserRepository.cs" />
     <Compile Include="Persistence\UnitOfWork\DemoUnitOfWork.cs" />
     <Compile Include="Persistence\UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -378,7 +381,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\HelpModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -412,6 +414,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905222056072_InitialMigration.resx">
       <DependentUpon>201905222056072_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908301619081_sve.resx">
+      <DependentUpon>201908301619081_sve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908301751145_Ispravka.resx">
+      <DependentUpon>201908301751145_Ispravka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908301846115_izmena2.resx">
+      <DependentUpon>201908301846115_izmena2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

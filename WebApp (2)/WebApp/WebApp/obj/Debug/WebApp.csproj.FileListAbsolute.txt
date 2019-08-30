@@ -147,7 +147,9 @@ C:\Users\Marko\Desktop\New folder1\WebApp (2)\WebApp\WebApp\bin\System.Web.Http.
 C:\Users\Marko\Desktop\New folder1\WebApp (2)\WebApp\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Marko\Desktop\New folder1\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.CopyComplete
 C:\Users\Marko\Desktop\New folder1\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
-D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\VBCSCompiler.exe
+D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Reflection.Metadata.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\WebApp.dll.config
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\WebApp.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\WebApp.pdb
@@ -175,10 +177,7 @@ D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Diagnostics.FileVers
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Diagnostics.StackTrace.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.IO.Compression.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.IO.FileSystem.dll
-D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.IO.Pipes.AccessControl.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.IO.Pipes.dll
-D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Reflection.Metadata.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Security.AccessControl.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Security.Claims.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -195,6 +194,7 @@ D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\System.Xml.XPath.XDocument.
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\vbc.exe
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\vbc.exe.config
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\vbc.rsp
+D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\VBCSCompiler.exe
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\roslyn\VBCSCompiler.exe.config
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\Antlr3.Runtime.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\EntityFramework.dll
@@ -289,10 +289,12 @@ D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\Microsoft.Owin.Security.Twitter.xm
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\System.Web.Http.Owin.xml
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.InitialMigration.resources
+D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.sve.resources
+D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.Ispravka.resources
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.GenerateResource.cache
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.CoreCompileInputs.cache
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.CopyComplete
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.pdb
+D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.izmena2.resources

@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
-using WebApp.Models;
+using WebApp.Models.HelpModels;
 
 namespace WebApp.Persistence.Repository
 {
-    public class DayTypeRepository :Repository <DayType,int>, IDayTypeRepository
+    public class UserRepository: Repository<User, int>, IUserRepository
     {
-        public DayTypeRepository (DbContext context) : base (context)
+        public UserRepository(DbContext context) : base(context)
         {
-
         }
     }
 }

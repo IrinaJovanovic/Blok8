@@ -7,8 +7,7 @@ using WebApp.Models;
 
 namespace WebApp.Persistence.Repository
 {
-    public interface IVehicleRepository : IRepository<Vehicle,int>
+    public interface IDiscountRepository : IRepository<Discounts, int>
     {
-        IEnumerable<Vehicle> GetAllAvailables();
     }
 }

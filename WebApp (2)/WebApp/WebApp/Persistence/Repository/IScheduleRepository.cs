@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApp.Models;
+using WebApp.Models.HelpModels;
 
 namespace WebApp.Persistence.Repository
 {
-    public interface IDayTypeRepository: IRepository<DayType,int>
+    public interface IScheduleRepository: IRepository <Schedule, int>
     {
-     
     }
 }

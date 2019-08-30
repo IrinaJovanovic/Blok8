@@ -7,7 +7,7 @@ using WebApp.Models;
 
 namespace WebApp.Persistence.Repository
 {
-    public interface ISerialNumberSLRepository: IRepository<SerialNumberSL,int>
+    public interface IDepatureRepository : IRepository<Depature, int>
     {
     }
 }

@@ -16,29 +16,24 @@ namespace WebApp.Persistence.UnitOfWork
         {
             _context = context;
         }
+        [Dependency]
+        public IDiscountRepository Discounts { get; set; }
 
         [Dependency]
-        public IDayTypeRepository DayTypes { get; set; }
+        public IScheduleRepository Schedules { get; set; }
+
         [Dependency]
         public ILineRepository Lines { get; set; }
-        [Dependency]
-        public IPassengerTypeRepository PassengerTypes { get; set; }
+       
         [Dependency]
         public IPricelistRepository PriceLists { get; set; }
         [Dependency]
         public IStationRepository Stations { get; set; }
         [Dependency]
         public ITicketRepository Tickets { get; set; }
+
         [Dependency]
-        public ITicketPricesRepository TicketPrices { get; set; }
-        [Dependency]
-        public ITicketTypeRepository TicketTypes { get; set; }
-        [Dependency]
-        public ITimetableRepository Timetables { get; set; }
-        [Dependency]
-        public IVehicleRepository Vehicles { get; set; }
-        [Dependency]
-        public ISerialNumberSLRepository SerialNumberSLs { get; set; }
+        public IUserRepository Users { get; set; }
 
         [Dependency]
         public IPayPalRepository PayPals { get; set; }
@@ -46,8 +41,13 @@ namespace WebApp.Persistence.UnitOfWork
         [Dependency]
         public IPictureRepository Pictures { get; set; }
 
+       
+
         [Dependency]
-        public IUserRepository Users { get; set; }
+        public IDepatureRepository Depatures { get; set; }
+
+        [Dependency]
+        public ILocationRepository Locations { get; set; }
 
 
 

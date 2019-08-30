@@ -39,20 +39,20 @@ namespace WebApp.Models
 
 
 
-        //public enum Colors
-        //{
-        //    Aqua = 0,
-        //    Blue,
-        //    BlueViolet,
-        //    Brown,
-        //    Chartreuse,
-        //    Coral,
-        //    Crimson,
-        //    Gold,
-        //    Green,
-        //    GreenYellow,
-        //    Indigo,
-        //    Maroon
-        //}
+        public enum Colors
+        {
+            Aqua = 0,
+            Blue,
+            BlueViolet,
+            Brown,
+            Chartreuse,
+            Coral,
+            Crimson,
+            Gold,
+            Green,
+            GreenYellow,
+            Indigo,
+            Maroon
+        }
     }
 }

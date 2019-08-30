@@ -7,7 +7,7 @@ using WebApp.Models;
 
 namespace WebApp.Persistence.Repository
 {
-    public class LineRepository : Repository<Line, int>, ILineRepository
+    public class LineRepository : Repository<Line, string>, ILineRepository
     {
         public LineRepository(DbContext context) : base(context)
         {
@@ -17,5 +17,7 @@ namespace WebApp.Persistence.Repository
         {
             return context.Set<Line>().Find(v);
         }
+
+        
     }
 }

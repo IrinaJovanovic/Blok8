@@ -9,6 +9,6 @@ namespace WebApp.Persistence.Repository
 {
     public interface IPayPalRepository : IRepository<PayPal,int>
     {
-        int GetPayPal(string s);
+       // int GetPayPal(string s);
     }
 }

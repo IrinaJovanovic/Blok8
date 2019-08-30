@@ -466,9 +466,16 @@ namespace WebApp.Controllers
             //var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
 
             var Appuser = new ApplicationUser() { Id = Guid.NewGuid().ToString(), UserName = model.Email, Email = model.Email, PasswordHash = ApplicationUser.HashPassword(model.Password) };
+            IdentityResult result = null;
+            try
+            {
+                result = await UserManager.CreateAsync(Appuser);
+            }
+            catch (Exception e)
+            {
 
-
-            IdentityResult result = await UserManager.CreateAsync(Appuser, model.Password);
+            }
+            
 
             if (!result.Succeeded)
             {
@@ -643,8 +650,17 @@ namespace WebApp.Controllers
             }
 
             var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            IdentityResult result = null;
 
-            IdentityResult result = await UserManager.CreateAsync(user);
+            try
+            {
+                result = await UserManager.CreateAsync(user);
+            }
+            catch (Exception e)
+            {
+
+            }
+
             if (!result.Succeeded)
             {
                 return GetErrorResult(result);

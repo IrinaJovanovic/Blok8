@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Web;
 using WebApp.Models;
 
 namespace WebApp.Persistence.Repository
 {
-    public class SerialNumberSLRepository : Repository<SerialNumberSL, int>, ISerialNumberSLRepository
+    public class DepatureRepository : Repository<Depature, int>, IDepatureRepository
     {
-        public SerialNumberSLRepository(DbContext context) : base(context)
+        public DepatureRepository(DbContext context) : base(context)
         {
         }
 
