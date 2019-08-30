@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { TicketPricesComponent } from './ticket-prices/ticket-prices.component';
 import { BusNetworksLinesComponent } from './bus-networks-lines/bus-networks-lines.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [ {
     path: "",
@@ -20,6 +21,10 @@ const routes: Routes = [ {
   {
     path: "bus-networks-lines",
     component: BusNetworksLinesComponent
+  },
+  {
+    path: "register",
+    component: RegisterComponent
   },];
 
 
