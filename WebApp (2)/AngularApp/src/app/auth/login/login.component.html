@@ -4,20 +4,38 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+ <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <label class="navbar-brand" href="#">Public transportation</label>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
 
-            <a class="nav-item nav-link active" id="btn" routerLink="/home" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" id="btn" routerLink="/" routerLinkActive="active">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link active" id="btn" routerLink="/register" routerLinkActive="active">Register</a>
 
         </div>
     </div>
-</nav>
+</nav>  -->
+
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Carobni autobus - jgsp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Pocetna</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/register">Registruj se</a>
+      </li>
+    </ul>
+  </div>  
+  </nav> 
 
 <h2>LOGIN</h2>
 <p>{{message}}</p>

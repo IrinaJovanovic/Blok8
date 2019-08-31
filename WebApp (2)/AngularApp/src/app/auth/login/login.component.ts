@@ -32,7 +32,7 @@ export class LoginComponent {
    
     if(this.authService.isLoggedIn)
     {
-      if(localStorage.role == "Admin")
+     /*  if(localStorage.role == "Admin")
       {
         this.router.navigate(['admin']);
       }
@@ -43,7 +43,7 @@ export class LoginComponent {
       else if(localStorage.role == "Controller")
       {
       this.router.navigate(['control-ticket']);
-      }
+      } */
     }
     else
     {

@@ -25,6 +25,7 @@ import { LoginComponent } from './auth/login/login.component';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [],

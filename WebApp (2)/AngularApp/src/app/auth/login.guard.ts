@@ -18,10 +18,10 @@ export class LoginGuard implements CanActivate, CanActivateChild {
       this.router.navigate(['admin']);
       return false;
     }
-    if (localStorage.role === 'AppUser') {
+    /* if (localStorage.role === 'AppUser') {
       this.router.navigate(['app-user-home']);
       return false;
-    }
+    } */
     if (localStorage.role === 'Controller') {
       this.router.navigate(['control-ticket']);
       return false;

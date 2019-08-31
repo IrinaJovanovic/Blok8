@@ -721,7 +721,7 @@ namespace WebApp.Controllers
             return null;
         }
 
-        private class ExternalLoginData
+        public class ExternalLoginData //OVDE BILO PRIVATE 
         {
             public string LoginProvider { get; set; }
             public string ProviderKey { get; set; }

@@ -7,6 +7,8 @@ import { BusNetworksLinesComponent } from './bus-networks-lines/bus-networks-lin
 import { RegisterComponent } from './register/register.component';
 import { LoginGuard } from './auth/login.guard';
 import { LoginComponent } from './auth/login/login.component';
+import { AuthGuard } from './auth/auth.guard';
+import { UserGuard } from './auth/user.guard';
 
 const routes: Routes = [ {
     path: "",
@@ -29,7 +31,7 @@ const routes: Routes = [ {
     component: RegisterComponent
   },
   { 
-    path: 'login', 
+    path: "login", 
     component: LoginComponent, 
     canActivate: [LoginGuard]
   },
