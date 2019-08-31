@@ -289,7 +289,6 @@ D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\Microsoft.Owin.Security.Twitter.xm
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\System.Web.Http.Owin.xml
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.InitialMigration.resources
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.sve.resources
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.Ispravka.resources
