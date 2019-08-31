@@ -1,0 +1,89 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--<p>Veseli autobus<p>-->
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Carobni autobus - jgsp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-item nav-link active" id="btn" (click)="Logout()" routerLinkActive="active">Izloguj se</a>
+      </li>
+    </ul> 
+  </div>  
+</nav>
+
+<div class="card-deck ">
+    <div class="card col-md-3 mb-3">
+        <a routerLink="/user-buy-ticket" routerLinkActive="active">
+            <img src="assets/images/kupiKartu.png" class="card-img-top" alt="..." href="/buying-ticket">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Buy a ticket</h5>
+            <p class="card-text">You can buy a ticket for any destination in town.</p>
+
+        </div>
+    </div>
+   <!--  <div class="card col-md-3 mb-3">
+        <a routerLink="/bus-maps" routerLinkActive="active">
+            <img src="assets/images/user-lines.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Lines</h5>
+            <p class="card-text">You can see which buses goes on choosed line.</p>
+        </div>
+    </div>
+
+    <div class="card col-md-3 mb-3">
+        <a routerLink="/bus-location" routerLinkActive="active">
+            <img src="assets/images/user-bus-location.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Bus location</h5>
+            <p class="card-text">Right here, you can see where is your bus in real time.</p>
+        </div>
+    </div>
+    <div class="card col-md-3 mb-3">
+        <a routerLink="/ticket-price" routerLinkActive="active">
+            <img src="assets/images/user-ticket-price.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Price list</h5>
+            <p class="card-text">You can see price of tickets for your ride.</p>
+        </div>
+    </div>
+
+    <div class="card col-md-3 mb-3">
+        <a routerLink="/schedule" routerLinkActive="active">
+            <img src="assets/images/user-schedule.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Schedule</h5>
+            <p class="card-text">You can see schedule for every bus, every day.</p>
+        </div>
+    </div>
+    <div class="card col-md-3 mb-3">
+        <a routerLink="/edit-profile" routerLinkActive="active">
+            <img src="assets/images/user-edit.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">My profile</h5>
+            <p class="card-text">You can edit your profile.</p>
+        </div>
+    </div>
+    <div class="card col-md-3 mb-3">
+        <a routerLink="/check-in-ticket" routerLinkActive="active">
+            <img src="assets/images/user-check.png" class="card-img-top" alt="...">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Check in ticket</h5>
+            <p class="card-text">Check your ticket here when you get on the bus.</p>
+        </div>
+    </div>-->
+</div> 

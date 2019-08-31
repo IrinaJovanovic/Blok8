@@ -9,6 +9,9 @@ import { LoginGuard } from './auth/login.guard';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './auth/auth.guard';
 import { UserGuard } from './auth/user.guard';
+import { HomeUserComponent } from './home-user/home-user.component';
+import { UserBuyTicketComponent } from './user-buy-ticket/user-buy-ticket.component';
+import { UpdateProfileComponent } from './update-profile/update-profile.component';
 
 const routes: Routes = [ {
     path: "",
@@ -34,6 +37,21 @@ const routes: Routes = [ {
     path: "login", 
     component: LoginComponent, 
     canActivate: [LoginGuard]
+  },
+  { 
+    path: "home-user", 
+    component: HomeUserComponent, 
+    canActivate: [UserGuard]
+  },
+  { 
+    path: "user-buy-ticket", 
+    component: UserBuyTicketComponent, 
+    canActivate: [UserGuard]
+  },
+  { 
+    path: "update-profile", 
+    component: UpdateProfileComponent, 
+    canActivate: [UserGuard]
   },
 ];
 

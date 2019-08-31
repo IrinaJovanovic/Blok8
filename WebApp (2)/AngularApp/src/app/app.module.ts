@@ -10,6 +10,13 @@ import { BusNetworksLinesComponent } from './bus-networks-lines/bus-networks-lin
 import { RegisterComponent } from './register/register.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './auth/login/login.component';
+import { HomeUserComponent } from './home-user/home-user.component';
+import { UserBuyTicketComponent } from './user-buy-ticket/user-buy-ticket.component';
+import { UpdateProfileComponent } from './update-profile/update-profile.component';
+import {UpdateProfileService} from './update-profile/update-profile.service'
+import { NgxPayPalModule } from 'ngx-paypal';
+import { JwtInterceptor } from './auth/jwt-interceptor';
+import { BuyTicketService } from './user-buy-ticket/buy-ticket.service';
 
 @NgModule({
   declarations: [
@@ -20,15 +27,20 @@ import { LoginComponent } from './auth/login/login.component';
     BusNetworksLinesComponent,
     RegisterComponent,
     LoginComponent,
+    HomeUserComponent,
+    UserBuyTicketComponent,
+    UpdateProfileComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPayPalModule,
   ],
-  providers: [],
+  providers: [UpdateProfileService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
+    BuyTicketService,{provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

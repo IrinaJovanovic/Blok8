@@ -32,18 +32,18 @@ export class LoginComponent {
    
     if(this.authService.isLoggedIn)
     {
-     /*  if(localStorage.role == "Admin")
+       if(localStorage.role == "Admin")
       {
         this.router.navigate(['admin']);
       }
       else if(localStorage.role == "AppUser")
       {
-      this.router.navigate(['app-user-home']);
+      this.router.navigate(['home-user']);
       }
       else if(localStorage.role == "Controller")
       {
       this.router.navigate(['control-ticket']);
-      } */
+      } 
     }
     else
     {
