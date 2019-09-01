@@ -17,6 +17,14 @@ import {UpdateProfileService} from './update-profile/update-profile.service'
 import { NgxPayPalModule } from 'ngx-paypal';
 import { JwtInterceptor } from './auth/jwt-interceptor';
 import { BuyTicketService } from './user-buy-ticket/buy-ticket.service';
+import { Component } from '@angular/core';
+import { AgmDirectionModule } from 'agm-direction'
+import { AgmCoreModule } from '@agm/core';
+import {BusNetworksLinesService} from './bus-networks-lines/bus-networks-lines.service';
+import { AdminComponent } from './admin/admin.component';
+import { AdminEditLinesComponent } from './admin-edit-lines/admin-edit-lines.component';
+import { AdminEditStationComponent } from './admin-edit-station/admin-edit-station.component';
+import { AdminEditPriceListComponent } from './admin-edit-price-list/admin-edit-price-list.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +38,11 @@ import { BuyTicketService } from './user-buy-ticket/buy-ticket.service';
     HomeUserComponent,
     UserBuyTicketComponent,
     UpdateProfileComponent,
+    AdminComponent,
+    AdminEditLinesComponent,
+    AdminEditStationComponent,
+    AdminEditPriceListComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -38,6 +51,8 @@ import { BuyTicketService } from './user-buy-ticket/buy-ticket.service';
     FormsModule,
     HttpClientModule,
     NgxPayPalModule,
+    AgmDirectionModule,
+    AgmCoreModule.forRoot({apiKey: 'AIzaSyDnihJyw_34z5S1KZXp90pfTGAqhFszNJk'}),
   ],
   providers: [UpdateProfileService,{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     BuyTicketService,{provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true}],

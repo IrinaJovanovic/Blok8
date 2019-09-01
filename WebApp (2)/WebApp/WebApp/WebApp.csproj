@@ -280,6 +280,10 @@
     <Compile Include="Migrations\201908301846115_izmena2.Designer.cs">
       <DependentUpon>201908301846115_izmena2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909011225342_inicijalneVrednosti.cs" />
+    <Compile Include="Migrations\201909011225342_inicijalneVrednosti.Designer.cs">
+      <DependentUpon>201909011225342_inicijalneVrednosti.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -435,6 +439,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908301846115_izmena2.resx">
       <DependentUpon>201908301846115_izmena2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909011225342_inicijalneVrednosti.resx">
+      <DependentUpon>201909011225342_inicijalneVrednosti.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

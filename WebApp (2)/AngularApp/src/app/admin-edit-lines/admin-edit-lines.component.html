@@ -1,0 +1,216 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--<p>Veseli autobus<p>-->
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="#">Carobni autobus - jgsp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+     <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-item nav-link active" id="btn" (click)="Logout()" routerLinkActive="active">Izloguj se</a>
+      </li>
+    </ul> 
+  </div>  
+</nav>
+
+<form  class="needs-validation" novalidate>
+
+
+    
+    <div class="needs-validation">
+        <div class="form-row">
+            <div class="col-md-5 mb-2 id1">
+                <div class="text1">
+                    ADD LINE
+                </div>
+
+                        
+                <form [formGroup]="Form"   class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-2 id">
+                            Enter line name:
+
+                        </div>
+                        <div class="col-md-6 mb-2 input">
+                            <input type="text" class="form-control" formControlName="name" id="validationCustom04" required>
+                            <div class="invalid-feedback">
+                                Please enter valid id.
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="col-md-6 mb-2 id">
+                            Choose stations:
+                        </div>
+                        <div class="col-md-6 mb-2 input">
+                                <input type="text" class="form-control" [(ngModel)]="selectedStations" formControlName="stations" id="validationCustom04" required>
+                                <div class="invalid-feedback">
+                                    Please enter valid stations.
+                                </div>
+                            </div>
+
+
+                    </div>
+
+                    <div class="form-row">
+                            <div class="col-md-6 mb-2 id">
+                                Choose type:
+                            </div>
+                            <div class="col-md-6 mb-2 input">
+                                    <select class="custom-select" (change)="select($event)" required>
+                                            <option value=""></option>
+                                            <option value="Urban">Urban</option>
+                                            <option value="Suburban">Suburban</option> 
+                                        </select>
+                                </div>
+                        </div>
+
+
+                    <button type="button" (click)="AddLine()" class="btn btn-primary savebutton"> Add</button>
+                    <div>
+                        {{addMssg}}
+                    </div>
+                    <br/><br/>
+                    <div>
+                    <label>Stations</label>
+                    <select class="custom-select" (change)="selectedStation($event)" required>
+                            <option></option>
+                            <option *ngFor="let obj of stations" [value]="obj.Station">{{obj.Station}} - {{obj.Name}}</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <!---------------------------------------------------->
+            <div class="col-md-6 mb-2 diss">
+
+                <div class="row">
+                    <div class="col-6 col-sm-10">
+                        <div class="text2">
+                            DELETE
+                        </div>
+
+                        <form  class="needs-validation" novalidate>
+
+
+                            <div class="form-row">
+                                <div class="col-md-6 mb-2 id">
+                                    Chose line:
+
+                                </div>
+                                <div class="col-md-6 mb-2 input">
+                                        <select class="custom-select" (change)="selectDelete($event)" required>
+                                                <option></option>
+                                                <option *ngFor="let obj of lines" [value]="obj.Line">{{obj.Line}}</option>
+                                            </select>
+                                    <div class="invalid-feedback">
+                                        Please enter valid id.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button type="button" (click)="Delete()" class="btn btn-primary savebutton"> Delete</button>
+                            <div>
+                                    {{deleteMssg}}
+                            </div>
+
+                            <hr class="new1">
+                        </form>
+                    </div>
+
+
+                    <!-- Force next columns to break to new line -->
+                    <div class="w-100"></div>
+
+                    <div class="col-6 col-sm-10">
+                        <div class="text2">
+                            CHANGE
+                        </div>
+
+                        <form  class="needs-validation" novalidate>
+
+                           <div class="form-row">
+                            <div class="col-md-6 mb-2 id">
+                                Line:
+
+                            </div>
+                            <div class="col-md-6 mb-2 input" >
+                                    <select class="custom-select" (change)="selectDelete($event)" required>
+                                            <option></option>
+                                            <option *ngFor="let obj of lines"  [value]="obj.Line">{{obj.Line}}</option>
+                                        </select>
+                            </div>
+                            
+
+                         
+                        </div>
+
+                            <div class="form-row">
+                                <div class="col-md-6 mb-2 id">
+                                     stations:
+                                </div>
+                                <div class="col-md-6 mb-2 input">
+                                        <input type="text" class="form-control" [(ngModel)]="showStations" [ngModelOptions]="{standalone: true}" id="validationCustom04" required>
+                                        <div class="invalid-feedback">
+                                            Please enter valid id.
+                                        </div>
+                                    </div>
+
+                            </div>
+                            
+                            <button type="button" (click)="Show()" class="btn btn-primary savebutton"> Show</button>
+
+                            <div class="col-6 col-sm-10 change">
+
+                                    <div class="text3">
+                                        ADD AND DELETE STATIONS
+                                    </div>
+                                    <div class="text3">
+                                        
+                                    </div>
+                                    <form    class="needs-validation" novalidate>     
+                                    <div class="form-row">
+                                            <div class="col-md-2 mb-2 id">
+                                                Add:
+            
+                                            </div>
+                                            <div class="col-md-4 mb-2 input">
+                                                    <select class="custom-select" (change)="selectedStationAdd($event)" required>
+                                                            <option></option>
+                                                            <option *ngFor="let obj of stations" [value]="obj.Station">{{obj.Station}} - {{obj.Name}}</option>
+                                                 </select>
+                                            </div>
+            
+                                            <div class="col-md-6 mb-2 input">
+                                                <button type="button" (click)="AddStation()" class="btn btn-primary savebuttonn"> Add</button>
+                                                <button type="button" (click)="DeleteStation()" class="btn btn-primary savebuttonn"> Delete</button>
+                                            </div>
+                                            <div>
+                                                    {{stationMssg}}
+                                            </div>
+                
+                                    </div>
+                                </form>
+                                </div>
+            
+        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------->
+
+    <hr class="new1">
+ 
+</form>

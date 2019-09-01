@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
-using WebApp.Models.HelpModels;
+using WebApp.Models;
 using WebApp.Persistence.UnitOfWork;
 
 namespace WebApp.Controllers

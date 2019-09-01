@@ -29,3 +29,74 @@
           </ul>
         </div>
       </nav>
+
+      <form  (ngSubmit)="register()" class="needs-validation" novalidate>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col" colspan="2">Time ticket</th>
+                    <th scope="col" colspan="2">Daily ticket</th>
+                    <th scope="col" colspan="2">Monthly ticket</th>
+                    <th scope="col" colspan="2">Annual ticket</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Regular</td>
+                    <td>{{prices[0]}} USD</td>
+                    <td>Regular</td>
+                    <td>{{prices[3]}} USD</td>
+                    <td>Regular</td>
+                    <td>{{prices[6]}} USD</td>
+                    <td>Regular</td>
+                    <td>{{prices[9]}} USD</td>
+                </tr>
+    
+                <tr>
+    
+                    <td>Student</td>
+                    <td>{{prices[1]}} USD</td>
+                    <td>Student</td>
+                    <td>{{prices[4]}} USD</td>
+                    <td>Student</td>
+                    <td>{{prices[7]}} USD</td>
+                    <td>Student</td>
+                    <td>{{prices[10]}} USD</td>
+                </tr>
+    
+                <tr>
+                    <td>Retaire</td>
+                    <td>{{prices[2]}} USD</td>
+                    <td>Retaire</td>
+                    <td>{{prices[5]}} USD</td>
+                    <td>Retaire</td>
+                    <td>{{prices[8]}} USD</td>
+                    <td>Retaire</td>
+                    <td>{{prices[11]}} USD</td>
+                </tr>
+    
+                <tr>
+                    <th colspan="9" bgcolor="#d3dde2">
+    
+                    </th>
+                </tr>
+    
+            </tbody>
+        </table>
+    
+    
+    
+    
+        <button class="btn btn-primary" (click)="goHome()">Back to home</button>
+    
+    
+    
+    
+        <button class="btn btn-primary" (click)="buyTicket()">Go to buy ticket</button>
+        <br/>
+        <label>Students discount: {{prices[12]}}%</label>
+        <br/>
+        <label>Retree discount: {{prices[13]}}%</label>
+    
+    </form>

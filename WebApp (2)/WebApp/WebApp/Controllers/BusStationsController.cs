@@ -107,13 +107,13 @@ namespace WebApp.Controllers
 
         }
 
-   /*     [HttpPost]
-        [System.Web.Http.Route("api/BusStations/SendStationsToHub")]
-        public IHttpActionResult SendStationsToHub(List<StationModel> list)
-        {
-            //hub.AddStations(list);
-            return Ok();
-        }*/
+        //[HttpPost]
+        //[System.Web.Http.Route("api/BusStations/SendStationsToHub")]
+        //public IHttpActionResult SendStationsToHub(List<StationModel> list)
+        //{
+        //    hub.AddStations(list);
+        //    return Ok();
+        //}
 
     }
 }

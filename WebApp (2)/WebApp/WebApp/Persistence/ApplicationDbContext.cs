@@ -19,11 +19,9 @@ namespace WebApp.Persistence
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Schedule> Schedules { get; set; }
-       // public DbSet<Station> Stations { get; set; }
         public DbSet<Discounts> Discounts { get; set; }
         public DbSet<Picture> Pictures { get; set; }
         public DbSet<User> DetailedUsers { get; set; }
-       // public DbSet<Pricelist> Prices { get; set; }
         public DbSet<Depature> Depatures { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
