@@ -16,6 +16,9 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminEditLinesComponent } from './admin-edit-lines/admin-edit-lines.component';
 import { AdminEditStationComponent } from './admin-edit-station/admin-edit-station.component';
 import { AdminEditPriceListComponent } from './admin-edit-price-list/admin-edit-price-list.component';
+import { AdminEditScheduleComponent } from './admin-edit-schedule/admin-edit-schedule.component';
+import { BuyingTicketComponent } from './buying-ticket/buying-ticket.component';
+import { CheckInTicketComponent } from './check-in-ticket/check-in-ticket.component';
 
 const routes: Routes = [ {
     path: "",
@@ -76,6 +79,19 @@ const routes: Routes = [ {
     path: "admin-edit-price-list", 
     component: AdminEditPriceListComponent, 
     canActivate: [AuthGuard]
+  },
+  { 
+    path: "admin-edit-schedule", 
+    component: AdminEditScheduleComponent, 
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'buying-ticket',
+    component: BuyingTicketComponent
+  },
+  {
+    path: 'check-in-ticket',
+    component: CheckInTicketComponent
   },
 ];
 

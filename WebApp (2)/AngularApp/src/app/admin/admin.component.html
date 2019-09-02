@@ -13,11 +13,9 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/login">Uloguj se</a>
+        <a class="nav-item nav-link active" id="btn" (click)="Logout()">Izloguj se</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/register">Registruj se</a>
-      </li>
+     
     </ul>
   </div>  
   </nav>
@@ -43,15 +41,15 @@
         </div>
     </div>
 
-    <!--<div class="card col-md-4 mb-3">
-        <a routerLink="/admin-schedule" routerLinkActive="active">
+    <div class="card col-md-4 mb-3">
+        <a routerLink="/admin-edit-schedule" routerLinkActive="active">
             <img src="assets/homebus.jpg" class="card-img-top" alt="...">
         </a>
         <div class="card-body">
             <h5 class="card-title">Schedule</h5>
 
         </div>
-    </div>-->
+    </div>
     <div class="card col-md-4 mb-3">
         <a routerLink="/admin-edit-price-list" routerLinkActive="active">
             <img src="assets/cenovnik.jpg" class="card-img-top" alt="...">

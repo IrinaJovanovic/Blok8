@@ -188,6 +188,7 @@ namespace WebApp.Controllers
 
         // GET api/Account/ManageInfo?returnUrl=%2F&generateState=true
         [Route("ManageInfo")]
+        [Authorize(Roles = "AppUser")] //dodala irina 
         public async Task<ManageInfoViewModel> GetManageInfo(string returnUrl, bool generateState = false)
         {
             IdentityUser user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
@@ -721,7 +722,7 @@ namespace WebApp.Controllers
             return null;
         }
 
-        public class ExternalLoginData //OVDE BILO PRIVATE 
+        public class ExternalLoginData 
         {
             public string LoginProvider { get; set; }
             public string ProviderKey { get; set; }

@@ -5,9 +5,10 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.Windows.Media;
+//using System.Windows.Media;
 using WebApp.Models;
 using WebApp.Persistence.UnitOfWork;
+using static WebApp.Models.Enums;
 
 namespace WebApp.Controllers
 {

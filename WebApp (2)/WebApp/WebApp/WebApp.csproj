@@ -268,22 +268,6 @@
     <Compile Include="Migrations\201905222056072_InitialMigration.Designer.cs">
       <DependentUpon>201905222056072_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201908301619081_sve.cs" />
-    <Compile Include="Migrations\201908301619081_sve.Designer.cs">
-      <DependentUpon>201908301619081_sve.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908301751145_Ispravka.cs" />
-    <Compile Include="Migrations\201908301751145_Ispravka.Designer.cs">
-      <DependentUpon>201908301751145_Ispravka.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908301846115_izmena2.cs" />
-    <Compile Include="Migrations\201908301846115_izmena2.Designer.cs">
-      <DependentUpon>201908301846115_izmena2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201909011225342_inicijalneVrednosti.cs" />
-    <Compile Include="Migrations\201909011225342_inicijalneVrednosti.Designer.cs">
-      <DependentUpon>201909011225342_inicijalneVrednosti.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -430,18 +414,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905222056072_InitialMigration.resx">
       <DependentUpon>201905222056072_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908301619081_sve.resx">
-      <DependentUpon>201908301619081_sve.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908301751145_Ispravka.resx">
-      <DependentUpon>201908301751145_Ispravka.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908301846115_izmena2.resx">
-      <DependentUpon>201908301846115_izmena2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909011225342_inicijalneVrednosti.resx">
-      <DependentUpon>201909011225342_inicijalneVrednosti.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

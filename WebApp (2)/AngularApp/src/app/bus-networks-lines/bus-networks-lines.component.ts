@@ -23,14 +23,14 @@ export class BusNetworksLinesComponent implements OnInit {
   showStations  = false;
   myGroup: FormGroup;
   show: boolean = false;
-  iconPath : any = { url:"assets/homebus.jpg", scaledSize: {width: 35, height: 35}}
+  iconPath : any = { url:"assets/autobus.png", scaledSize: {width: 35, height: 35}}
   constructor(public service : BusNetworksLinesService, private formBuilder: FormBuilder, private route: Router) { }
 
   ngOnInit() {
     this.markerInfo = new MarkerInfo(new GeoLocation(45.242268, 19.842954), 
     "assets/pronadjiLokaciju.jpg",
     "Jugodrvo" , "" , "http://ftn.uns.ac.rs/691618389/fakultet-tehnickih-nauka");
-    this.selLine = new Polyline([], 'red', { url:"assets/homebus.jpg", scaledSize: {width: 50, height: 50}});
+    this.selLine = new Polyline([], 'red', { url:"assets/autobus.png", scaledSize: {width: 50, height: 50}});
     this.GetAllLines();
   }
 

@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TicketPriceService } from './ticket-prices.service';
+import { TicketPricesService } from './ticket-prices.service';
 
-describe('TicketPriceService', () => {
+describe('TicketPricesService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: TicketPriceService = TestBed.get(TicketPriceService);
+    const service: TicketPricesService = TestBed.get(TicketPricesService);
     expect(service).toBeTruthy();
   });
 });

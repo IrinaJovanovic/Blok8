@@ -12,6 +12,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LoginComponent } from './auth/login/login.component';
 import { HomeUserComponent } from './home-user/home-user.component';
 import { UserBuyTicketComponent } from './user-buy-ticket/user-buy-ticket.component';
+
 import { UpdateProfileComponent } from './update-profile/update-profile.component';
 import {UpdateProfileService} from './update-profile/update-profile.service'
 import { NgxPayPalModule } from 'ngx-paypal';
@@ -25,6 +26,9 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminEditLinesComponent } from './admin-edit-lines/admin-edit-lines.component';
 import { AdminEditStationComponent } from './admin-edit-station/admin-edit-station.component';
 import { AdminEditPriceListComponent } from './admin-edit-price-list/admin-edit-price-list.component';
+import { AdminEditScheduleComponent } from './admin-edit-schedule/admin-edit-schedule.component';
+import { BuyingTicketComponent } from './buying-ticket/buying-ticket.component';
+import { CheckInTicketComponent } from './check-in-ticket/check-in-ticket.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,9 @@ import { AdminEditPriceListComponent } from './admin-edit-price-list/admin-edit-
     AdminEditLinesComponent,
     AdminEditStationComponent,
     AdminEditPriceListComponent,
+    AdminEditScheduleComponent,
+    BuyingTicketComponent,
+    CheckInTicketComponent,
     
   ],
   imports: [

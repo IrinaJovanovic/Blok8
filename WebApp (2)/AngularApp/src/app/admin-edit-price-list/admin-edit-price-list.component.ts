@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TicketPriceService } from '../ticket-prices/ticket-prices.service';
+import { TicketPricesService } from '../ticket-prices/ticket-prices.service';
 import { FormBuilder, Validators } from '@angular/forms';
 import { AdminEditPriceListService } from './admin-edit-price-list.service';
 @Component({
@@ -22,7 +22,7 @@ export class AdminEditPriceListComponent implements OnInit {
     newPrice: ['', Validators.required],
     newDiscount: ['', Validators.required],
   });
-  constructor(public GetPriceListservice: TicketPriceService,public service :AdminEditPriceListService ,public fb: FormBuilder) {
+  constructor(public GetPriceListservice: TicketPricesService,public service :AdminEditPriceListService ,public fb: FormBuilder) {
   }
   ngOnInit() {
     this.getPricelist();

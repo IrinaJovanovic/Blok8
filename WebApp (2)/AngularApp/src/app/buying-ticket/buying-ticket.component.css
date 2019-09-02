@@ -1,0 +1,47 @@
+
+.card-deck{
+    margin-top: 50px;
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.collapse.navbar-collapse {
+    right: 0%;
+    position: absolute;
+}
+
+#label
+{
+    font-size: 36px;
+}
+.needs-validation {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn.btn-primary {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.email {
+    margin-top: 30px;
+}
+#btn
+{
+    background-color: #4CAF50; /* Green */
+}
+
+
+
+
+
+
+
+
