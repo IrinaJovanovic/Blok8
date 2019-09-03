@@ -264,14 +264,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="MailHelper\EmailHelper.cs" />
-    <Compile Include="Migrations\201905222056072_InitialMigration.cs" />
-    <Compile Include="Migrations\201905222056072_InitialMigration.Designer.cs">
-      <DependentUpon>201905222056072_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\201909021646570_First.cs" />
+    <Compile Include="Migrations\201909021646570_First.Designer.cs">
+      <DependentUpon>201909021646570_First.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\ArtificalSomething.cs" />
     <Compile Include="Models\Depature.cs" />
     <Compile Include="Models\Discounts.cs" />
     <Compile Include="Models\Enums.cs" />
@@ -412,8 +413,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905222056072_InitialMigration.resx">
-      <DependentUpon>201905222056072_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909021646570_First.resx">
+      <DependentUpon>201909021646570_First.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
