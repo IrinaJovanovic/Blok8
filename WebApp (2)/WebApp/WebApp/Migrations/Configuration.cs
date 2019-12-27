@@ -130,7 +130,8 @@ namespace WebApp.Migrations
                 context.Lines.Add(line);
             }
 
-            
+            context.SaveChanges();
+
             if (!context.Schedules.Any(u => u.Line.Name == "1" && u.Day == Day.WorkDay))
             {
                 var schedule = new Schedule() { Day = Day.WorkDay, LineId = context.Lines.Where(u => u.Name == "1").Select(u => u.Id).First(), Duration = TimeSpan.FromMinutes(58), Depatures = new System.Collections.Generic.List<Depature>() { new Depature() { DepatureTime = "07:05" }, new Depature() { DepatureTime = "08:22" }, new Depature() { DepatureTime = "09:11" }, new Depature() { DepatureTime = "10:21" }, new Depature() { DepatureTime = "11:01" } } };
@@ -162,7 +163,7 @@ namespace WebApp.Migrations
                 var schedule = new Schedule() { Day = Day.Sunday, LineId = context.Lines.Where(u => u.Name == "4").Select(u => u.Id).First(), Duration = TimeSpan.FromMinutes(58), Depatures = new System.Collections.Generic.List<Depature>() { new Depature() { DepatureTime = "17:01" }, new Depature() { DepatureTime = "19:01" }, new Depature() { DepatureTime = "21:01" }, new Depature() { DepatureTime = "23:01" }, new Depature() { DepatureTime = "01:01" } } };
                 context.Schedules.Add(schedule);
             }
-
+            context.SaveChanges();
 
         }
     }
