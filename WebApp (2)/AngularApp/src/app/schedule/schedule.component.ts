@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { ScheduleService } from './schedule.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-schedule',
@@ -15,13 +17,55 @@ export class ScheduleComponent implements OnInit {
   saturday: string[];
   sunday: string[];
 
-  /* LineForm = this.fb.group({
+  LineForm = this.fb.group({
     LineName: [''],
    
-  }); */
- //constructor(private fb: FormBuilder) { }
- constructor() { } 
+  });
+
+  constructor(public service: ScheduleService, private route: Router,private fb: FormBuilder) { }
+  
+
   ngOnInit() {
+  }
+
+  selected (event: any) {
+    //update the ui
+    this.lineType = event.target.value;
+   
+    this.service.GetLines(this.lineType).subscribe((data) => { 
+      this.lines = data; });
+  }
+
+ 
+  GetSchedules()
+  {
+    if(this.lineType == "")
+    {
+      window.alert("Please select type");
+    }
+    if(this.LineForm.value.LineName == "")
+    {
+      window.alert("Please select line");
+    }
+    this.service.GetSchedule("WorkDay",this.LineForm.value.LineName).subscribe((data) => { 
+      this.workDay = data; });
+    this.service.GetSchedule("Saturday",this.LineForm.value.LineName).subscribe((data) => { 
+        this.saturday = data; });
+    this.service.GetSchedule("Sunday",this.LineForm.value.LineName).subscribe((data) => { 
+          this.sunday = data; });
+  }
+
+  Navigate()
+  {
+    if(localStorage.role == "AppUser")
+    {
+      this.route.navigate(['app-user-home']);
+    }
+    else
+    {
+      this.route.navigate(['home']);
+    }
+    
   }
 
   
