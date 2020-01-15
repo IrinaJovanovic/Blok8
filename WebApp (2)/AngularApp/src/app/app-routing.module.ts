@@ -19,6 +19,9 @@ import { AdminEditPriceListComponent } from './admin-edit-price-list/admin-edit-
 import { AdminEditScheduleComponent } from './admin-edit-schedule/admin-edit-schedule.component';
 import { BuyingTicketComponent } from './buying-ticket/buying-ticket.component';
 import { CheckInTicketComponent } from './check-in-ticket/check-in-ticket.component';
+import { ControlTicketComponent } from './control-ticket/control-ticket.component';
+import { ControlorGuard } from './auth/controlor.guard';
+import { ControlerComponent } from './controler/controler.component';
 
 const routes: Routes = [ {
     path: "",
@@ -92,6 +95,16 @@ const routes: Routes = [ {
   {
     path: 'check-in-ticket',
     component: CheckInTicketComponent
+  },
+  {
+    path: 'control-ticket',
+    component: ControlTicketComponent,
+    canActivate: [ControlorGuard]
+  },
+  {
+    path: 'controler',
+    component: ControlerComponent,
+    canActivate: [ControlorGuard]
   },
 ];
 

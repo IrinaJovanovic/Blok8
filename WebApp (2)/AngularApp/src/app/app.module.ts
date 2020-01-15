@@ -29,6 +29,8 @@ import { AdminEditPriceListComponent } from './admin-edit-price-list/admin-edit-
 import { AdminEditScheduleComponent } from './admin-edit-schedule/admin-edit-schedule.component';
 import { BuyingTicketComponent } from './buying-ticket/buying-ticket.component';
 import { CheckInTicketComponent } from './check-in-ticket/check-in-ticket.component';
+import {ControlTicketComponent} from './control-ticket/control-ticket.component';
+import { ControlerComponent } from './controler/controler.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { CheckInTicketComponent } from './check-in-ticket/check-in-ticket.compon
     AdminEditScheduleComponent,
     BuyingTicketComponent,
     CheckInTicketComponent,
-    
+    ControlTicketComponent,
+    ControlerComponent,
   ],
   imports: [
     BrowserModule,
