@@ -296,9 +296,6 @@ D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.dll
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.pdb
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.First.resources
 D:\FAX\GIT\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.GenerateResource.cache
-C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache
-C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.dll
-C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.pdb
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\bin\WebApp.dll.config
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\bin\WebApp.dll
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\bin\WebApp.pdb
@@ -444,3 +441,5 @@ C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\bin\Micr
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.first.resources
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.GenerateResource.cache
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.CopyComplete
+C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.dll
+C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.pdb
