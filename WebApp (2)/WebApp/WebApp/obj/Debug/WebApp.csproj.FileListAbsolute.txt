@@ -443,3 +443,4 @@ C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debu
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.CopyComplete
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.dll
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.pdb
+C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csprojAssemblyReference.cache

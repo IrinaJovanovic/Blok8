@@ -119,18 +119,18 @@ namespace WebApp.Controllers
             Int32.TryParse(req["Id"].Trim(), out id);
             Ticket ticket = _unitOfWork.Tickets.Get(id);
             if (id == -1)
-                return Ok("Ticket Id doens't excist in database. Please check your enter.");
+                return Ok("Ticket Id doens't exist in database. Please check your enter.");
 
             if (ticket == null)
             {
-                return Ok("Ticket Id unkonwn");
+                return Ok("Ticket Id unknown");
             }
 
 
             if (!_unitOfWork.Tickets.GetAll().Where(u => u.Id == id).Select(u => u.Checked).First())
             {
 
-                string retValue = "Ticket excist but not checked!" + System.Environment.NewLine +
+                string retValue = "Ticket exist but not checked!" + System.Environment.NewLine +
                     "Type: " + ticket.Type.ToString() + System.Environment.NewLine +
                     "Price: " + ticket.Price.ToString() + System.Environment.NewLine;
                 return Ok(retValue);
