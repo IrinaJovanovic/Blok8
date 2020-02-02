@@ -1,3 +1,8 @@
+
+.card-deck{
+    margin-top: 50px;
+}
+
 .navbar {
     min-height: 20px;
   }
@@ -8,7 +13,7 @@
     line-height: 10px;
   }
   
-  .navbar-toggle {
+.navbar-toggle {
     /* (80px - button height 34px) / 2 = 23px */
     margin-top: 23px;
     padding: 9px 10px !important;
@@ -34,47 +39,31 @@
     position: absolute;
 }
 
-.needs-validation {
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 10px;
+#label
+{
+    font-size: 36px;
+}
+.card-body {
+    /*border-style: solid;*/
     text-align: center;
 }
 
-
-/*
-  .btn.btn-primary {
-      margin-bottom: 20px;
-      margin-top: 20px;
-  }*/
-
-.email {
-    margin-top: 30px;
-}
-
-.poruka {
-    margin-bottom: 20px;
-}
-
-.message {
+/* .btn.btn-primary {
     text-align: center;
-    position: relative;
-    left: 25%;
-    width: 300px;
-  height: 150px;
 }
-
-.id {
-    margin-top: 5px;
-}
-
-.btn {
-    position: absolute;
-    top: 50%;
-    left: 57%;
-}
-
-/* #btn
+#btn
 {
     background-color: #4CAF50; /* Green */
 /*} */
+.needs-validation {
+    /*  width: 500px;*/
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+

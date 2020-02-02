@@ -95,10 +95,7 @@
     margin-top: 5px;
 }
 
-.btn {
-    position: relative;
-    left: 10%;
-}
+
 
 .tabela {
     margin-top: 250px;
@@ -130,12 +127,7 @@ textarea {
     margin-top: 5px;
 }
 
-#btn
-{
-    background-color: #4CAF50; /* Green */
-    color: white;
-    
-}
+
 
 #table
 {

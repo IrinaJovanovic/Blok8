@@ -197,7 +197,7 @@ namespace WebApp.Controllers
             switch (ticketType)
             {
                 case "TimeTicket":
-                    ch = false;
+                    ch = false;//menjala bilo false
                     ty = TicketType.TimeTicket;
                     remTime = TimeSpan.FromMinutes(60);
                     break;

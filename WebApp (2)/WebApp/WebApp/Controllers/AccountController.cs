@@ -17,6 +17,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
+using WebApp.MailHelper;
 using WebApp.Models;
 using WebApp.Models.HelpModels;
 using WebApp.Persistence.UnitOfWork;
@@ -120,6 +121,7 @@ namespace WebApp.Controllers
             ApplicationUser appUsr = UserManager.Users.Where(u => u.Id == userId).FirstOrDefault();
             appUsr.Email = model.Email;
             appUsr.UserName = model.Email;
+            
 
             UserManager.Update(appUsr);
 
@@ -128,6 +130,7 @@ namespace WebApp.Controllers
             usr.FirstName = model.FirstName;
             usr.LastName = model.LastName;
             usr.Address = model.City + "," + model.Street + "," + model.Number;
+            
 
             switch (model.TypeOfPerson)
             {
@@ -488,7 +491,8 @@ namespace WebApp.Controllers
             var user = new User() { AppUserId = Appuser.Id, FirstName = model.FirstName, LastName = model.LastName, DateOfBirth = tempDate, Address = model.City + "," + model.Street + "," + model.Number, UserType = type, Approved = approved, postedImage = false, Checked = check };
             _unitOfWork.Users.Add(user);
             _unitOfWork.Complete();
-
+            
+            //EmailHelper.SendEmail("alek.jagodic@gmail.com","ACCOUNT APORVEDD", "Your account just have been aprroved by controler");
             return Ok("Succesfully registrated! Please login to continue");
         }
 

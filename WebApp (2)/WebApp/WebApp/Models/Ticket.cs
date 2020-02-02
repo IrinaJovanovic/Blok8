@@ -21,7 +21,6 @@ namespace WebApp.Models
         [ForeignKey("User")]
         public string UserId { get; set; }
         public ApplicationUser User { get; set; }
-
     }
 
 }

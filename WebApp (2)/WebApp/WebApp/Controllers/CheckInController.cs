@@ -75,7 +75,7 @@ namespace WebApp.Controllers
             Ticket ticket = _unitOfWork.Tickets.Get(id);
             string retVal =
                    "Type: " + ticket.Type + System.Environment.NewLine +
-                   "Price: " + ticket.Price + System.Environment.NewLine;
+                   "Price: " + ticket.Price +" USD"+ System.Environment.NewLine;
 
 
             switch (ticket.Type)
@@ -132,10 +132,9 @@ namespace WebApp.Controllers
 
                 string retValue = "Ticket exist but not checked!" + System.Environment.NewLine +
                     "Type: " + ticket.Type.ToString() + System.Environment.NewLine +
-                    "Price: " + ticket.Price.ToString() + System.Environment.NewLine;
+                    "Price: " + ticket.Price.ToString()+"USD" + System.Environment.NewLine;
                 return Ok(retValue);
             }
-
 
             string retVal = "Ticket checked!" + System.Environment.NewLine +
                      " Checked: " + ticket.CheckedTime.ToString() + System.Environment.NewLine +
@@ -145,6 +144,8 @@ namespace WebApp.Controllers
 
             if (ticket.User != null)
                 retVal += System.Environment.NewLine + " User" + ticket.User.ToString();
+            
+           
 
             string userName = "";
             switch (ticket.Type)

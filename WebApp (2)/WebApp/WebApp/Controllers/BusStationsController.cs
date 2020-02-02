@@ -22,12 +22,6 @@ namespace WebApp.Controllers
         {
         }
 
-        // public BusStationsController(IUnitOfWork uw, BusLocationHub hubb)
-        //{
-        //    _unitOfWork = uw;
-        //    hub = hubb;
-        //}
-     
 
         public BusStationsController(IUnitOfWork unitOfWork, DbContext context)
         {
@@ -85,28 +79,28 @@ namespace WebApp.Controllers
 
         }
 
-        [HttpGet]
-        [System.Web.Http.Route("api/BusStations/GetLinesForLocation")]
-        public IHttpActionResult GetLinesForLocation()
-        {
-            var AllLines = _unitOfWork.Lines.GetAll();
-            List<LineModel> lines = new List<LineModel>();
+        //[HttpGet]
+        //[System.Web.Http.Route("api/BusStations/GetLinesForLocation")]
+        //public IHttpActionResult GetLinesForLocation()
+        //{
+        //    var AllLines = _unitOfWork.Lines.GetAll();
+        //    List<LineModel> lines = new List<LineModel>();
 
 
-            foreach (var item in AllLines)
-            {
-                List<Stations> stations = new List<Stations>();
-                foreach (var i in item.Stations)
-                {
-                    var loc = _unitOfWork.Locations.Get(i.LocationId);
-                    stations.Add(new Stations { Latitude = loc.Lat, Longitude = loc.Lon });
-                }
+        //    foreach (var item in AllLines)
+        //    {
+        //        List<Stations> stations = new List<Stations>();
+        //        foreach (var i in item.Stations)
+        //        {
+        //            var loc = _unitOfWork.Locations.Get(i.LocationId);
+        //            stations.Add(new Stations { Latitude = loc.Lat, Longitude = loc.Lon });
+        //        }
 
-                lines.Add(new LineModel { LineNumber = item.Name, Stations = stations });
-            }
-            return Json(lines);
+        //        lines.Add(new LineModel { LineNumber = item.Name, Stations = stations });
+        //    }
+        //    return Json(lines);
 
-        }
+        //}
 
         //[HttpPost]
         //[System.Web.Http.Route("api/BusStations/SendStationsToHub")]

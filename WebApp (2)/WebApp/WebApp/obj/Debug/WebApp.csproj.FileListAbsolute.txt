@@ -439,6 +439,7 @@ C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\bin\Micr
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\bin\System.Web.Http.Owin.xml
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.first.resources
+C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.Migrations.nova.resources
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.GenerateResource.cache
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.csproj.CopyComplete
 C:\Users\irina.jovanovic\Desktop\ovooooo\Blok8\WebApp (2)\WebApp\WebApp\obj\Debug\WebApp.dll

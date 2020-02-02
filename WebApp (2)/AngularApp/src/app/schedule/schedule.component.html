@@ -37,12 +37,18 @@
 
         <div class="col-md-6 mb-3">
             <div class="form-group">
-
-                <label for="validationCustom05">Izaberite oblast</label>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <br>
+                <label for="validationCustom05">Choose area</label>
                 <select class="custom-select" (change)="selected($event)" required>
         <option selected="selected"></option>
-        <option value="Urban"> Gradski</option>
-        <option value="Suburban">Prigradski</option>
+        <option value="Urban"> Urban</option>
+        <option value="Suburban">Suburban</option>
           </select>
             </div>
         </div>
@@ -50,7 +56,7 @@
     <div class = "form-row">
         <div class="col-md-6 mb-3">
             <div class="form-group">
-                <label for="validationCustom05">Izaberite liniju</label>
+                <label for="validationCustom05">Choose line</label>
                 <select class="custom-select" formControlName="LineName" required>
                     <option *ngFor="let obj of lines" [value]="obj">{{obj}}</option>
       </select>
@@ -58,14 +64,14 @@
         </div>
     </div>
     
-    <button class="btn btn-primary" type="submit">Prikazi</button>
+    <button class="btn btn-primary" type="submit">Show</button>
     <table class="table table-bordered">
         <thead>
             <tr>
 
-                <th scope="col">Radni dan</th>
-                <th scope="col">Subota</th>
-                <th scope="col">Nedelja</th>
+                <th scope="col">WorkDay</th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
             </tr>
         </thead>
         <tbody>
